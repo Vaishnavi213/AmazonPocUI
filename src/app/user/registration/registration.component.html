@@ -1,0 +1,70 @@
+<body>
+    <div class="container">
+        <div class="bg-img col-12">
+            <div class="col-6">
+                <div class="login-card-yellow p-3 shadow-lg rounded">
+                    <div class="pt-3">
+                        <h2 class="text-dark">New User</h2>
+                        <h2 class="text-dark">Registration..</h2>
+                    </div>
+
+                    <form class="mt-5" (ngSubmit)="AddUser(f)" #f=ngForm>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-sm bg-light" name="custName"
+                                placeholder="Enter your Name" ngModel required #val=ngModel autocomplete="off">
+                            <div *ngIf="val.invalid && val.touched" class="vali">
+                                <div *ngIf="val.errors.required">
+                                    Name can't be Empty
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" class="form-control form-control-sm bg-light" name="custEmail"
+                                placeholder="Enter Email Id" ngModel required email #emval=ngModel autocomplete="off">
+                                <div *ngIf="emval.invalid && emval.touched" class="vali">
+                                        <div *ngIf="emval.errors.required">
+                                            email can't be Empty
+                                        </div>
+                                        <div *ngIf="emval.errors.email">
+                                            this is a email field
+                                        </div>
+                                </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-sm bg-light" name="custPhoneNo"
+                                placeholder="Enter Phone Number" ngModel required #phone=ngModel autocomplete="off">
+                                <div *ngIf="phone.invalid && phone.touched" class="vali">
+                                        <div *ngIf="phone.errors.required">
+                                            This is a Number field
+                                        </div>
+                                </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" class="form-control form-control-sm bg-light" name="custPassword"
+                                placeholder="Password" ngModel required autocomplete="off">
+                        </div>
+
+                        <div class="mt-4">
+                            <button class="btn btn-sm btn btn-warning col" style="border-color: floralwhite;"
+                                [disabled]="!f.valid">
+                                Register
+                            </button>
+                        </div>
+
+                        <div class="mt-4">
+                            <p class="text-center">
+                                <a class="regis" [routerLink]="['/user/login']" routerLinkActive="router-link-active">
+                                    <h6>........Login Here.......</h6>
+                                </a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

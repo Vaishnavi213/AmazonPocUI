@@ -1,0 +1,31 @@
+.login-card-yellow {
+    background: linear-gradient(145deg,#ffffff69, #ffc107);
+}
+
+ .col-6 {
+    font-size: 13px;
+    margin-top:126px;
+} 
+
+body{
+    background-image: url('/assets/shopping.jpg');  
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+    overflow: auto;
+    width:100%;
+    margin-top:50px;
+  }
+
+.regis:hover {
+    color:#b32900;
+}
+
+.regis {
+    color:#252e38;
+}
+
+.vali{
+    color: #902f1d;
+    font-weight: 500;
+}

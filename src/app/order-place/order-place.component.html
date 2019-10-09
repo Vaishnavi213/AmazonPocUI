@@ -1,0 +1,106 @@
+<div class="row">
+    <div class="col-md-5 col-md-offset-5 cols">
+        <form class="form-horizontal" role="form" (ngSubmit)="AddAddress(f)" #f=ngForm>
+            <!-- Form Name -->
+            <legend>Address Details</legend>
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-sm-6 control-label" for="house number">House/Flat/Apartment Number</label>
+                <div class="col-sm-10">
+                    <input type="text" placeholder="Enter Number" class="form-control" name="houseNo" ngModel>
+                </div>
+            </div>
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-sm-6 control-label" for="Street">Street Name</label>
+                <div class="col-sm-10">
+                    <input type="text" placeholder="Enter Street Name" class="form-control" name="street" ngModel>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-sm-4 control-label" for="city">City</label>
+                <div class="col-sm-10">
+                    <input type="text" placeholder="City" class="form-control" name="city" ngModel>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-sm-4 control-label" for="pincode">PIN code</label>
+                <div class="col-sm-4">
+                    <input type="text" placeholder="Post Code" class="form-control" name="pincode" ngModel>
+                </div>
+            </div>
+
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-sm-4 control-label" for="state">State</label>
+                <div class="col-sm-10">
+                    <input type="text" placeholder="Enter State" class="form-control" name="state" ngModel>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="pull-right">                        
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="col-md-5 col-md-offset-5 cols2">
+        <form class="form-horizontal" role="form">
+            <!-- Form Name -->
+            <legend>Please enter your payment information below</legend>
+            <!-- Text input-->
+
+            <div class='form-row'>
+                <div class='col-md-8 form-group required'>
+                    <label class='control-label'>Name on Card</label>
+                    <input class='form-control' size='4' type='text' name="cardName" ngModel>
+                </div>
+            </div>
+
+            <div class='form-row'>
+                <div class='col-md-8 form-group card required'>
+                    <label class='control-label'>Card Number</label>
+                    <input autocomplete='off' class='form-control card-number' size='20' type='text'
+                        name="cardNum" ngModel>
+                </div>
+            </div>
+
+            <div class='form-row'>
+                
+                <div class='col-sm-5 form-group expiration required'>
+                    <label class='control-label'>Expiration</label>
+                    <input class='form-control card-expiry-month' placeholder='MM' size='2' type='text'
+                        name="expMonth" ngModel>
+                </div>
+                <div class='col-sm-5 form-group expiration required'>
+                    <label class='control-label'> </label>
+                    <input class='form-control card-expiry-year' placeholder='YYYY' size='4' type='text'
+                        name="expYear" ngModel>
+                </div>
+
+                <div class='col-sm-4 form-group cvv required'>
+                        <label class='control-label'>CVV</label>
+                        <input autocomplete='off' class='form-control card-cvc' placeholder='ex. 311' size='4' 
+                           name="cvv" type='text' ngModel>
+                    </div>
+            </div>
+
+            <div class='form-row'>
+                <div class='col-md-6 form-group'>
+                    <button class='form-control btn btn-primary submit-button standard-button' type='submit'
+                        id="pay">Place order
+                        »</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

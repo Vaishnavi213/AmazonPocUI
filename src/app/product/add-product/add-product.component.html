@@ -1,0 +1,43 @@
+
+<div class="container-fluid" style="background: linear-gradient(45deg, #e6bb39, transparent); margin-top: 55px; max-height: 600px;">
+    <div class="col-md-12">
+        <form (ngSubmit)="AddProduct(f)" #f=ngForm>
+                <h1>Add Product</h1>
+        <div class="col-md-6" style="margin-left: 300px;">
+            <div class="form-group">
+                <label>ProductName</label>                       
+                    <input type="text" class="form-control" name="productName" ngModel>
+            </div>
+            <div class="form-group">
+                <label>Price</label>
+                <input type="text" class="form-control" name="price" ngModel>
+            </div>
+            <div class="form-group">
+                <label>Image</label>
+                <input type="text" class="form-control" name="image"ngModel>
+            </div>
+            <div class="form-group">
+                <label>Description</label>
+                <input type="text" class="form-control" name="description" ngModel>
+            </div>
+                
+            <div class="form-group">
+                    <label>Category</label>
+                    <select (mouseenter)="onEnter()" class="form-control" name="categoryId" ngModel>
+                            <option *ngFor="let c of categoryDetails" [value]="c.categoryId">
+                                    {{c.categoryName}}
+                            </option>
+                        </select>
+                </div>
+                <hr>    
+                <p></p>
+            <div class="form-group">                          
+               <button type="submit" class="btn btn-info" style="margin-right: 20px; margin-left:140px;">Add Product</button>
+               <button type="submit" class="btn btn-info" [routerLink]="['/product/get-product']"
+               routerLinkActive="router-link-active">View Products</button>
+            </div>
+            <hr>
+        </div> 
+        </form>
+    </div>
+</div>

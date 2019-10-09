@@ -1,0 +1,32 @@
+     <div class="card">  
+        <div class="card-header" style="text-align:center">  
+            <b>List of all products</b>  
+        </div>  
+            <div class="card-body">  
+                <div class="card-footer">  
+                    <div class="col-lg-12 table-responsive">  
+                        <table class="table table-striped">  
+                            <thead>  
+                                <tr>  
+                                    <th>Id</th>  
+                                    <th>Product Name</th>  
+                                    <th>Price</th>                                   
+                                    <th>Description</th>  
+                                </tr>  
+                            </thead>  
+                                <tbody>  
+                                    <tr *ngFor="let Product of products">  
+                                        <td>{{Product.productId}}</td>  
+                                        <td>{{Product.productName}}</td>  
+                                        <td>{{Product.price}}</td>
+                                        <td>{{Product.description}}</td>
+                                        <td> 
+                                            <button class="btn btn-primary mr-1" [routerLink]="['/product/edit-product',Product.productId]" routerLinkActive="router-link-active">edit</button>  
+                                            <button type="button" class="btn btn-danger mr-1" (click)="deleteProduct(Product.productId)">Delete</button>  
+                                        </td>  
+                                    </tr>  
+                                </tbody>  
+                        </table>  
+                    </div>  
+                </div>  
+            </div>    

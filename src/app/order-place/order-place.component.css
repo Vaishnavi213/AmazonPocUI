@@ -1,0 +1,19 @@
+.cols{
+    margin-top: 80px;
+    margin-left: 80px;
+    border-right: 1px solid gray;
+}
+
+.cols2{
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+legend {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: #e47515;
+    font-family: cursive;
+}
+

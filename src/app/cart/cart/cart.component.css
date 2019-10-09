@@ -1,0 +1,33 @@
+.buttonStyle {
+    margin-top: 35px;
+}
+
+.tdborder {
+    border-top:none;
+}
+
+.totalprice {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.clr {
+   background-color: #f5cf96;
+}
+
+h1{
+    text-align: center;
+}
+
+.orders {
+    border-radius: 50px;
+    background-color: rgb(130, 119, 101);  
+    border: none;
+}
+
+.orders:hover {
+    border-radius: 50px;
+    background-color: rgb(81, 169, 25);  
+    border: none;
+}
+

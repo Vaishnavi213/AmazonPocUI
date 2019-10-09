@@ -1,0 +1,76 @@
+<div class="container-fluid">
+		<div class="navbar navbar-expand-sm fixed-top nvStyle">
+			<ul class="navbar-nav" style="width: 100%; max-height: 47px;">          
+				<div id="mySidenav" class="sidenav">
+	
+					<a class="closebtn" onclick="closeNav()">&times;</a>
+					<hr id="line">
+					<a class="menulinks">On Sale</a>
+					<hr id="line">
+					<a class="menulinks">Electronics</a>
+					<hr id="line">
+					<a class="menulinks">TV & Appliances</a>
+					<hr id="line">
+					<a class="menulinks">Men</a>
+					<hr id="line">
+					<a class="menulinks">Women</a>
+					<hr id="line">
+					<a class="menulinks">Baby & Kids</a>
+					<hr id="line">
+					<a class="menulinks">Home & Furniture</a>
+					<hr id="line">
+					<a class="menulinks">Sports</a>
+					<hr id="line">
+					<a class="menulinks">Books & more..</a>
+					<hr id="line">
+	
+				</div>
+	
+				<span style="font-size:30px; cursor:pointer; margin-top: 3px;" onclick="openNav()">&#9776;</span>
+				<div class="logo">
+					<li class="nav-item">
+						<a class="navbar-brand"></a>
+						<img src="assets\download.png" alt="Logo" style="width:160px;">
+					</li>
+				</div>
+	
+				<div class="searchinput">
+					<form class="form-inline">
+						<div class="input-group btn-round-sm btn-sm" style="width:420px;margin-top: -19px;
+												margin-left: 350px;;">
+							<input class="form-control" type="text" placeholder="Search Products"
+								style="border: 1px solid #e49a15;" name="search" [(ngModel)]="searchText"
+								autocomplete="off">
+	
+							<div class="input-group-append">
+								<div class="input-group-text"
+									style="background-color: #e49a15;border: 1.5px solid #e49a15;">
+									<i class="fa fa-search" style=" color: white"></i>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+	
+				<div class="menu-bar" style="margin-left: 0px;">
+					<li class="nav-item">
+						<button type="submit" id="myheader" class="nav-link active" [routerLink]="['/home']"
+							routerLinkActive="router-link-active"> <i class="fa fa-home"></i> HOME</button>
+					</li>
+					<a>{{Custname}}</a>
+					<li class="nav-item">
+						<button type="submit" id="myheader" class="nav-link" [routerLink]="['/cart']" routerLinkActive="router-link-active"> 
+							<i class="fa fa-shopping-cart"></i> CART</button>
+					</li>
+					<li class="nav-item">
+						<button type="submit" *ngIf="!temp" id="myheader" class="nav-link" [routerLink]="['/user/login']"
+							routerLinkActive="router-link-active">
+							<i class="fas fa-sign-in-alt"></i> LOGIN</button>
+						<button type="submit" *ngIf ="temp" (click)="logOut()" id="myheader" class="nav-link">
+							<i class="fas fa-sign-out-alt"></i> LOGOUT</button>
+					</li>
+				</div>
+			</ul>
+		</div>
+	</div>
+

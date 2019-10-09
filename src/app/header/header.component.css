@@ -1,0 +1,99 @@
+.navbar {
+	background-color:#ffffff; 
+}
+#myheader {
+	margin:9px 4px ;
+	color: #e78d06;
+	font-size: 13px;
+	padding-right: 22px;
+	padding-left: 12px;
+	font-weight: 500;
+}
+
+.nav-link{
+   border-radius: 40px;
+  /* border-color: #e78d06;  */
+  border: none;
+  background-color: white;
+  }
+
+.nav-link:hover{
+    border-radius: 40px;
+    border: 1px solid #e78d06;
+    background-color: white;
+    }
+
+.menu-bar {
+    margin-top: -4px;
+    margin-left: auto;
+    display: inline-flex;
+    position: sticky;
+   }
+
+.sidenav {
+ height: 100%;
+ width: 0;
+ position: fixed;
+ z-index: 1;
+ margin-top: 50px;
+ left: 0;
+ background-color: #e49a15;
+ overflow-x: hidden;
+ transition: 0.5s;
+ padding-top: 60px;
+}
+
+.btn-success {
+  background-color: #e49a15;
+  border : #e49a15;
+}
+
+.menulinks {
+ padding: 0px 0px 8px 34px;
+ margin-bottom: 0px;
+ margin-top: -9px;
+ text-decoration: none;
+ font-size: 25px;
+ color: black;
+ display: block;
+ transition: 0.3s;
+ border: #e49a15 3px solid;
+}
+
+.menulinks:hover {
+ color: black;
+ background-color: white;
+ display:block;
+ text-decoration: none;
+ margin-top: -15px;
+}
+
+#line {
+    margin-top: 0px;
+}
+
+.closebtn {
+ color: black;
+ position: absolute;
+ top: 2px;
+ right: 8px;
+ font-size: 36px;
+}
+
+.closebtn:hover {
+   color:black;
+   text-decoration: none;
+}
+
+.searchinput {
+  margin-top: 18px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nvStyle{
+    background-color: #ffffff;
+    background-image: linear-gradient(100deg, #f8f9fa00, #e78d0652);
+    border-bottom: 1px solid #d28717;
+    max-height: 55px;
+}

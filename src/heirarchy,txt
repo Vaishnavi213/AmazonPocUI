@@ -1,0 +1,24 @@
+*---src
+    |
+    |*----app
+    |      |
+    |      |*-----User
+    |      |      |
+    |      |      |*---User.component.ts | .html | .css
+    |      |
+    |      |*-----Registration
+    |      |      |
+    |      |      |*---Registration.component.ts | .html | .css
+    |      |      |
+    |      |
+    |      |*-----Shared
+    |      |      |
+    |      |      |*----User.service.ts
+    |      |
+    |      |*------app.module.ts
+    |      |
+    |      |*------app-routing.module.ts (route config)
+    |      |
+    |*-----index.html
+    |
+    |

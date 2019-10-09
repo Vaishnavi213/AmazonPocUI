@@ -1,0 +1,42 @@
+<app-header></app-header>
+<body>
+<div class="container">
+    <div class="bg-img col-12">
+        <div class="col-6">
+            <div class="login-card-yellow p-3 shadow-lg rounded">
+                <div class="pt-3">
+                    <h2 class="text-dark">LOGIN HERE TO GET AMAZING OFFERS..</h2>
+                </div>
+
+                <form class="mt-5" (ngSubmit)="UserLogIn(f)" #f=ngForm>
+                    <div class="form-group">
+                        <input type="email" class="form-control form-control-sm bg-light" name="custEmail" placeholder="Email Id" 
+                            ngModel autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control form-control-sm bg-light"  name="custPassword" placeholder="Password"
+                            ngModel autocomplete="off">
+                    </div>
+
+                    <div class="mt-4">
+                        <button class="btn btn-sm btn btn-warning col" style="border-color: floralwhite;">
+                            Login
+                        </button>
+                    </div>
+
+                    <div class="mt-5">
+                        <p class="text-center">
+                            Don't have an account?
+                            <a class="regis" [routerLink]="['/user/registration']"
+                                routerLinkActive="router-link-active">
+                                <h6>Click here to register</h6>
+                            </a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

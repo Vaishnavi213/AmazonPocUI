@@ -1,0 +1,120 @@
+.navbar {
+	background-color:#ffffff !important; 
+	border-bottom: 3px solid #e18e22;
+    margin-top: 5px;
+}
+#myheader {
+	margin:3px ;
+	color: #e78d06;
+	font-size: 21px;
+	padding-right: 22px;
+	padding-left: 12px;
+    font-weight: 600;
+    background-color: white;
+    border: none;
+}
+
+#myheader:hover {
+  color: #e78d06;
+    border: 1px solid #d28717;
+    background-color: white;
+}
+
+.menu-bar {
+    margin-top: 5px;
+    margin-left: auto;
+    display: inline-flex;
+    position: sticky;
+    margin-bottom: 2px;
+   }
+
+.sidenav {
+ height: 100%;
+ width: 0;
+ position: fixed;
+ z-index: 1;
+ margin-top: 70px;
+ left: 0;
+ background-color: #e49a15;
+ overflow-x: hidden;
+ transition: 0.5s;
+ padding-top: 60px;
+}
+
+.menulinks {
+ padding: 0px 0px 8px 34px;
+ margin-bottom: 0px;
+margin-top: -9px;
+ text-decoration: none;
+ font-size: 25px;
+ color: black;
+ display: block;
+ transition: 0.3s;
+ border: #e49a15 3px solid;
+}
+
+.menulinks:hover {
+ color: black;
+ background-color: white;
+ display:block;
+ text-decoration: none;
+ margin-top: -15px;
+}
+
+#line {
+    margin-top: 0px;
+}
+
+.closebtn {
+ color: black;
+ position: absolute;
+ top: 2px;
+ right: 8px;
+ font-size: 36px;
+}
+
+.closebtn:hover {
+   color:black;
+   text-decoration: none;
+}
+
+.carousel {
+    position: relative;
+    margin-top: 82px;
+    margin-right: 40px;
+    margin-left: 40px;
+   }
+
+  .brands {
+	margin-left: 50px;
+	margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.img-thumbnail:hover {
+  transform: scale(1.5); 
+}
+
+.gallery {
+  margin-left: 38px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  height:223px;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.price {
+ margin-top:12px;
+}
+.price:hover {
+	color:blue;
+}
